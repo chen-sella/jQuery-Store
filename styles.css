@@ -1,0 +1,90 @@
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.products{
+    align-items: center;
+    justify-content: center;
+    width: 33%;
+    border: solid 2px #FAFAFA ;
+    border-radius: 3px;
+    text-align: center;
+}
+
+.images{
+    width: 18em;
+    height: 18em;
+    padding: 3em;
+}
+
+.paragraph{
+    text-align: center;
+}
+
+.checked {
+    color: orange;
+    padding-left: 0.5em;
+}
+
+.add{
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1.5%;
+    margin-bottom: 2%;
+    border: solid 0.5px #F5F5F5;
+}
+
+.amount{
+    border: solid 0.5px #F5F5F5;
+    padding:1.25%;
+    margin-left: 3px;
+    border-radius: 5px;
+}
+
+.productAmount{
+    border: solid 0.5px #F5F5F5;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 1.5%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+}
+
+.cart{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(106, 143, 139, 0.95);
+}
+
+.cartText{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="container"] {
+      width: 100%;
+      margin-left: 5px;
+    }
+    [class*="products"] {
+        width: 90%;
+        height: 20em;
+    }
+    [class*="paragraph"]{
+        padding-top: 2em;
+    }
